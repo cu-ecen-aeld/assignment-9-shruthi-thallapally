@@ -1,0 +1,4 @@
+config BR2_PACKAGE_LDD
+	bool "ldd"
+	help
+	  This option adds support for cross-compiling the ldd modules from the misc-modules and scull, enabling them as kernel modules
