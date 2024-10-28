@@ -6,12 +6,14 @@ case "$1" in
         scull_load.sh
         module_load.sh faulty
         modprobe hello
+        
         ;;
     stop)
         echo "Unloading scull, fault and helloworld driver"
         scull_unload.sh
         module_unload.sh faulty
         rmmod hello
+        
         ;;
     *)
         echo "usage: $0 {start|stop}"
